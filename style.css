@@ -1,0 +1,416 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: montserrat;
+}
+nav {
+  background: black;
+  height: 80px;
+  width: 100vw;
+  width: cover;
+  position: fixed;
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  padding: 7px;
+  margin-left: 25px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: rgb(252, 249, 249);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  text-decoration: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: rgb(246, 84, 4);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+section {
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh- 80px);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.bgimg {
+  background-image: url(https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?w=900&t=st=1710867535~exp=1710868135~hmac=4ebb7837051e6536d0b16f5662a53c5c59731eb984c3448ce51dc6fe240c53af);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.details {
+  color: white;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+span {
+  color: rgb(238, 250, 5);
+}
+.mainimg {
+  height: 280px;
+  border-radius: 10%;
+}
+.mainimg img {
+  object-fit: cover;
+  transition: transform 0.8s;
+  cursor: pointer;
+}
+
+.mainimg img:hover {
+  transform: scale(0.85);
+}
+.social {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline;
+}
+.aboutme {
+  color: black;
+  background-color: white;
+  margin-top: 2px;
+  margin-left: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.skills {
+  background-color: orangered;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 50px;
+}
+
+body {
+  background: #243b47;
+}
+
+.contentContainer {
+  background: #efefef;
+  padding: 20px;
+  max-width: 350px;
+  min-width: 150px;
+  margin: 15vh auto;
+  border-radius: 10px;
+  border: solid 5px #dbdbdb;
+}
+
+.skillBar {
+  margin-bottom: 26px;
+  margin-bottom: 1.66em;
+  h4 {
+    font-size: 21px;
+    font-size: 1.33em;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-bottom: 0.33em;
+  }
+}
+.skillBarContainer {
+  width: 100%;
+  max-width: 350px;
+  height: 26px;
+  height: 1.66em;
+  background: #e6eae3;
+  background: rgb(8, 102, 220);
+  background: rgba(8, 102, 220, 0.2);
+  overflow: hidden;
+  border-radius: 5px;
+}
+.skillBarValue {
+  height: 1.66em;
+  float: left;
+  background: #0866dc;
+  background: rgb(8, 102, 220);
+  background: rgba(8, 102, 220, 0.75);
+}
+
+.value-00 {
+  width: 0;
+}
+.value-10 {
+  width: 10%;
+}
+.value-20 {
+  width: 20%;
+}
+.value-30 {
+  width: 30%;
+}
+.value-40 {
+  width: 40%;
+}
+.value-50 {
+  width: 50%;
+}
+.value-60 {
+  width: 60%;
+}
+.value-70 {
+  width: 70%;
+}
+.value-80 {
+  width: 80%;
+}
+.value-90 {
+  width: 90%;
+}
+.value-100 {
+  width: 100%;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100%;
+  }
+  100% {
+    width: normal;
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100%;
+  }
+  100% {
+    width: normal;
+  }
+}
+@-ms-keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100%;
+  }
+  100% {
+    width: normal;
+  }
+}
+@-o-keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100%;
+  }
+  100% {
+    width: normal;
+  }
+}
+@keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100%;
+  }
+  100% {
+    width: normal;
+  }
+}
+.skillBarValue {
+  -webkit-animation: slideIn 2s;
+  -moz-animation: slideIn 2s;
+  -o-animation: slideIn 2s;
+  animation: slideIn 2s;
+}
+.imglogos {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.imglogos img {
+  object-fit: cover;
+  transition: transform 0.8s;
+  cursor: pointer;
+}
+
+.imglogos img:hover {
+  transform: scale(1.2);
+}
+.social img {
+  object-fit: cover;
+  transition: transform 0.8s;
+  cursor: pointer;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}
+.box3 {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.box4 {
+  margin-top: 20px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.projects {
+  color: black;
+  background-color: rgb(221, 52, 52);
+  margin-top: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  min-height: 50vh;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: white;
+}
+.card2 {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: white;
+}
+.card3 {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: white;
+}
+.card-text {
+  width: 270px;
+  margin-top: 10px;
+  align-items: center;
+}
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contact {
+  color: rgb(246, 241, 241);
+  background-color: rgb(15, 28, 67);
+  margin-top: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  min-height: 50vh;
+}
+.socials {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.socials img {
+  object-fit: cover;
+  transition: transform 0.8s;
+  cursor: pointer;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+.conatct-details {
+  margin-top: 10px;
+}
+.phone {
+  margin-top: 100px;
+  text-align: center;
+}
+.phone img {
+  object-fit: cover;
+  transition: transform 0.8s;
+  cursor: pointer;
+}
+
+.phone img:hover {
+  transform: scale(1.2);
+}
